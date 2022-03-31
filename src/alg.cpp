@@ -23,6 +23,8 @@ int priority(char ch) {
       return 3;
     case '/':
       return 3;
+    case ' ':
+      return 4;
     default:
       return -1;
   }
