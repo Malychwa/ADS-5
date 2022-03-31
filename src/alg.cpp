@@ -61,6 +61,7 @@ std::string infx2pstfx(std::string inf) {
   }
   while (!stack1.isEmpty()) {
     postf.push_back(stack1.get());
+    postf.push_back(' ');
     stack1.pop();
   }
   return postf;
