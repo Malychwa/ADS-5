@@ -13,7 +13,7 @@ class TStack {
         if (!(isEmpty())) {
         return arr[top];
         }
-        return '';
+        return 0;
     }
 
     bool isEmpty() const {
