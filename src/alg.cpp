@@ -43,12 +43,14 @@ std::string infx2pstfx(std::string inf) {
       if (pr == 1) {
         while (stack1.get() != '(') {
           postf.push_back(stack1.get());
+          postf.push_back(' ');
           stack1.pop();
         }
         stack1.pop();
       } else {
         while (priority(stack1.get()) >= pr) {
           postf.push_back(stack1.get());
+          postf.push_back(' ');
           stack1.pop();
         }
         stack1.push(inf[i]);
