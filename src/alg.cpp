@@ -27,7 +27,7 @@ std::string infx2pstfx(std::string inf) {
   TStack <char, 100> stack1;
   for (int i = 0; i < inf.size(); i++) {
     int pr = priority(inf[i]);
-    if (pr == -1){
+    if (pr == -1) {
       postf.push_back(inf[i]);
       postf.push_back(' ');
     } else if (pr == 0 || pr > priority(stack1.get()) || stack1.isEmpty()) {
@@ -54,7 +54,7 @@ std::string infx2pstfx(std::string inf) {
   }
   return postf;
 }
-  
+
 int calcul(char ch, int a, int b) {
 switch (ch) {
   case '+':
@@ -70,8 +70,8 @@ switch (ch) {
   default: return 0;
   }
 }
-  
-  
+
+
 int eval(std::string pref) {
   TStack <int, 100> stack2;
   int res = 0;
@@ -89,4 +89,3 @@ int eval(std::string pref) {
   res = stack2.get();
   return res;
 }
-  
