@@ -26,6 +26,7 @@ int priority(char ch) {
     default:
       return -1;
   }
+}
 
 
 std::string infx2pstfx(std::string inf) {
