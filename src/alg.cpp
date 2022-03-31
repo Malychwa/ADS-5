@@ -64,6 +64,7 @@ std::string infx2pstfx(std::string inf) {
     postf.push_back(' ');
     stack1.pop();
   }
+  postf.erase(postf.end() - 1, postf.end());
   return postf;
 }
 
