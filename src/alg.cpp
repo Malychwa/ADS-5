@@ -3,6 +3,12 @@
 #include <map>
 #include "tstack.h"
 
+int priority(char ch);
+std::string infx2pstfx(std::string inf);
+int calcul(char ch, int a, int b);
+int eval(std::string pref);
+
+
 int priority(char ch) {
   switch (ch) {
     case '(':
